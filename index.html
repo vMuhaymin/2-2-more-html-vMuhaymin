@@ -36,8 +36,8 @@
     <!-- HEADER -->
     <!-- TODO (Containers - 2/3): Wrap this header in a semantic <header> or a <div>. -->
       <header>
-    <h1>Simple Social Media - Starter</h1>
-    <p>This is a starter. Finish the TODOs in comments to complete the page.</p>
+        <h1>Simple Social Media - Starter</h1>
+        <p>This is a starter. Finish the TODOs in comments to complete the page.</p>
       </header>
 
     <!-- NAVIGATION -->
@@ -55,13 +55,13 @@
       </div>
     -->
 
-    <div>
+    <nav>
       <a href="#home">Home</a>
       <a href="#create">Create</a>
       <a href="#about">About</a>
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Docs</a>
 
-    </div>
+    </nav>
 
     <!-- HOME SECTION -->
     <h2 id="home">Home</h2>
@@ -71,20 +71,24 @@
     <h3>Posts</h3>
     <!-- TODO (Containers - 3/3): Wrap EACH post in its own container (e.g., <div>). -->
     <!-- Post 1 - TODO: Wrap me in a container -->
-    <h4>John Smith</h4>
-    <p>Hello! This is my first post in this class.</p>
-
+     <div class="post">
+      <h4>John Smith</h4>
+      <p>Hello! This is my first post in this class.</p>
+    </div>
     <!-- Post 2 - TODO: Wrap me in a container -->
-    <h4>Mary Johnson</h4>
-    <p>HTML is clear once you learn the basic building blocks.</p>
-
+    <div class="post">
+      <h4>Mary Johnson</h4>
+      <p>HTML is clear once you learn the basic building blocks.</p>
+    </div>
     <!-- Post 3 - TODO: Wrap me in a container -->
-    <h4>Alex Brown</h4>
-    <p>Next, I want to try adding styles with CSS.</p>
-
+    <div class="post">
+      <h4>Alex Brown</h4>
+      <p>Next, I want to try adding styles with CSS.</p>
+    </div>
     <!-- CREATE SECTION -->
-    <h2 id="create">Create</h2>
-    <p>Complete the form below so it could be used to create a new post.</p>
+     <section>
+      <h2 id="create">Create</h2>
+      <p>Complete the form below so it could be used to create a new post.</p>
 
     <!-- FORM (incomplete on purpose) -->
     <!-- TODO (Forms - 1/4): Add action="#" and method="post" to the <form> tag. -->
@@ -92,30 +96,43 @@
     <!-- TODO (Forms - 3/4): Add name= and placeholder= attributes to both fields. -->
     <!-- TODO (Forms - 4/4): Make BOTH the name input and message textarea required. -->
     <!-- Optional: Add a Title input and a Category dropdown. -->
-    <form>
+    <form action="#" method="post" >
       <!-- Name field - TODO: add label, id=, name=, placeholder=, and make required -->
       <!-- Example to achieve: <label for="name">Your Name:</label> -->
       <!-- Then: <input id="name" name="name" type="text" placeholder="Your name" required> -->
-      <input type="text">
+
+     <div class="form-group">
+        <label for="input" id="name" >Your Name:</label>
+        <input id="name" name="name" placeholder="Your name" required>
+      </div>
 
       <!-- Message field - TODO: add label, id=, name=, placeholder=, and make required -->
       <!-- Example to achieve: <label for="message">Your Post:</label> -->
       <!-- Then: <textarea id="message" name="message" rows="4" placeholder="Write your post..." required></textarea> -->
-      <textarea rows="4"></textarea>
+
+      <div class="form-group">
+        <label for="message" >Your Post:</label>
+        <textarea name="message" id="message" placeholder="Write your post.."  rows="4" required></textarea>
+      </div>
+
 
       <!-- Submit button - TODO: add type="submit" to the button below -->
-      <button>Post</button>
+      <button type="submit">Post</button>
     </form>
 
     <!-- ABOUT SECTION -->
     <h2 id="about">About</h2>
     <p>This mini app is for practicing containers, links, and forms with pure HTML.</p>
-
+    </section>
     <!-- FOOTER -->
     <!-- TODO: Optionally wrap this in a semantic <footer> or a <div>. -->
-    <p>© 2024 Web Fundamentals</p>
+      <footer>
+        <p>© 2024 Web Fundamentals</p>
+
+      </footer>
 
     <!-- TODO: Close your main container here if you opened one at the top. -->
   </div>
+  
   </body>
 </html>
